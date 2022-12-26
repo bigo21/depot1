@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap'); 
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: #fff;
+}
+
+.background {
+    margin-inline: 10%;
+    padding-top: 10%;
+}
+
+.left {
+    width: 40%;
+}
+
+.right {
+    width: 60%;
+    margin-left: 5%;
+}
+
+table.t_head {
+    margin-bottom: 5%;
+    text-align: center;
+}
+
+img {
+    width: 50%;
+    height: 50%;
+    border-radius: 100%;
+    object-fit: cover;
+    /* filter: drop-shadow(0 0 5px rgb(37, 35, 35)); */
+    position: relative;
+}
+
+div.img {
+    width: 100%;
+    vertical-align: middle;
+    text-align: center;
+}
+
+div.infos {
+    text-align: center;
+}
+
+div.name {
+    font-size: 40px;
+    font-weight: bolder;
+    margin-top: 5%;
+}
+
+div.profess {
+    margin-top: 1%;
+    margin-bottom: 5%;
+}
+
+table.t_contain, td {
+    vertical-align: top;
+}
+
+.trait {
+    background-color: orange;
+    height: 3px;
+    width: 100px;
+    margin-block-start: 0.4em;
+    margin-block-end: 0.6em;
+    border-radius: 5%;
+}
+
+.section {
+    margin-top: 1%;
+    margin-bottom: 5%;
+}
+
+ul {
+    list-style-position: inside;
+    list-style-type: none;
+}
+
+.title {
+    margin-block-end: 0em;
+    margin-block-start: 20px;
+}
+
+h3.title3 {
+    font-size: small;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+}
+
+svg {
+    margin-left: 2%;
+    margin-right: 2%;
+    color: orange;
+}
+
+td.td_exp {
+    width: 20%;
+}
+
+tr.tr_comp td {
+    margin-left: 2%;
+    margin-right: 2%;
+}
