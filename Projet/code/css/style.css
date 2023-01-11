@@ -1,0 +1,122 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: ;
+}
+
+.project {
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), transparent), url(../img/automate.jpg);
+    background-size: cover;
+    background-position: center;
+    padding: 0 8%;
+    position: relative;
+}
+
+.project-theme {
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.project-theme h1 {
+    padding-top: 20%;
+    font-size: 600%;
+    font-weight: bolder;
+    color: transparent;
+    -webkit-text-stroke: 1px #fff;
+}
+
+.project-contain {
+    margin-top: 10%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.project-contain input {
+    color: #fff;
+    text-decoration: none;
+    width: 100px;
+    height: 40px;
+    background-color: rgba(0, 0, 0, 0.0);
+    border: 2px solid #fff;
+    transition: all 0.6s ease;
+}
+
+.project-contain input:hover {
+    width: 150px;
+    height: 55px;
+    background-color: rgba(255, 255, 255, 1);
+    color: black;
+}
+
+.home {
+    text-align: center;
+    justify-content: center;
+}
+
+.background {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.5);
+    text-align: center;
+    vertical-align: middle;
+    display: none;
+    transition: all 0.9s ease;
+}
+
+.title {
+    position: absolute;
+    justify-content: center;
+    width: 100%;
+    max-height: 350px;
+    height: 100px;
+    font-size: 300%;
+    font-weight: 600;
+    vertical-align: middle;
+}
+
+.step {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 60%;
+    height: 60%;
+    padding: 30px;
+    transform: translate(-50%, -50%);
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    border-radius: 8%;
+    display: none;
+    transition: all 1.0s ease;
+}
+
+.step-name {
+    width: 100%;
+}
+
+.step-contain {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    /* margin-bottom: auto;
+    vertical-align: middle;
+    align-content: center; */
+}
+
+.step-end {
+    width: 100%;
+}
+
+.cellule {
+    width: 50px;
+}

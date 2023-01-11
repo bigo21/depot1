@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/bootstrap.css.map">
+    <link rel="stylesheet" href="css/style.css">
+
+    <title>Creer l'automate</title>
+</head>
+
+<body>
+    <div class="project">
+        <div class="project-theme">
+            <h1>AUTOMATEMAKER</h1>
+        </div>
+        <div class="project-contain">
+            <input type="button" id="btn-start" value="START">
+        </div>
+    </div>
+
+    <!-- LES ETAPES -->
+    <div class="background">
+        <div class="title">AUTOMATEMAKER</div>
+    </div>
+
+    <div class="step first-step card text-center">
+        <div class="step-name card-header">
+            Quel type d'automate voulez-vous créer ?
+        </div>
+        <div class="step-contain card-body">
+            <form action="">
+
+                <div class="form-check form-check-inline">
+                    <input class="btn-check" type="radio" name="typeAutomate" value="AFD" id="flexRadioDefault1" checked>
+                    <label class="btn btn-outline-primary" for="flexRadioDefault1">
+                          AFD
+                        </label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="btn-check" type="radio" name="typeAutomate" id="flexRadioDefault2" value="AFN">
+                    <label class="btn btn-outline-primary" for="flexRadioDefault2">
+                          AFN
+                        </label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="btn-check" type="radio" name="typeAutomate" id="flexRadioDefault3" value="e-AFN" disabled>
+                    <label class="btn btn-outline-primary" for="flexRadioDefault3">
+                          e-AFN
+                        </label>
+                </div>
+            </form>
+        </div>
+        <div class="step-end card-footer">
+            <input type="button" id="automate-btn-cancel" value="Annuler">
+            <input type="button" id="automate-btn-next" value="Suivant">
+        </div>
+    </div>
+
+    <!-- ALPHABET -->
+    <div class="step step-alphabet card text-center">
+        <div class="step-name card-header">
+            L'ALPHABET
+        </div>
+        <div class="step-contain card-body">
+            <div>
+                <label for="inputNbrSymbols" class="form-label">Nombre de symbole</label>
+                <input type="text" class="form-control" id="inputNbrSymbols">
+            </div>
+            <div>
+                <label for="inputSymbols" class="form-label">Symboles</label>
+                <input type="text" class="form-control" id="inputSymbols" placeholder="a,b,c,d...">
+            </div>
+        </div>
+        <div class="step-end card-footer">
+            <input type="button" id="alphabet-btn-cancel" value="Précédent">
+            <input type="button" id="alphabet-btn-check" value="Annuler">
+            <input type="button" id="alphabet-btn-next" value="Suivant">
+        </div>
+    </div>
+
+    <!-- ETATS -->
+    <div class="step step-transitions card text-center">
+        <div class="step-name card-header">
+            LES ETATS
+        </div>
+        <div class="step-contain card-body">
+            <div>
+                <label for="inputNbrTrans" class="form-label">Nombre d'état</label>
+                <input type="text" class="form-control" id="inputNbrTransitions">
+            </div>
+            <div>
+                <label for="inputTransitions" class="form-label">Etats</label>
+                <input type="text" class="form-control" id="inputTransitions" placeholder="1,2,3,4...">
+            </div>
+        </div>
+        <div class="step-end card-footer">
+            <input type="button" id="transitions-btn-prev" value="Précédent">
+            <input type="button" id="transitions-btn-check" value="Annuler">
+            <input type="button" id="transitions-btn-next" value="Suivant">
+        </div>
+    </div>
+
+    <!-- ETATS INITITIAUX -->
+
+    <!-- AFD -->
+    <div class="step step-initialStateAFD card text-center">
+        <div class="step-name card-header">
+            ETAT INITIAL
+        </div>
+        <div class="step-contain card-body">
+            <div class="col-12">
+                <label for="selectInitialState" class="form-label">Choisissez l'état initial</label>
+                <div class="selectInitial" id="selectInitialState">
+                    <!-- Affichage js -->
+                </div>
+            </div>
+        </div>
+        <div class="step-end card-footer">
+            <input type="button" id="initialStateAFD-btn-prev" value="Précédent">
+            <input type="button" id="initialStateAFD-btn-check" value="Annuler">
+            <input type="button" id="initialStateAFD-btn-next" value="Suivant">
+        </div>
+    </div>
+
+    <!-- AFN -->
+    <div class="step step-initialStatesAFN card text-center">
+        <div class="step-name card-header">
+            AFN - ETATS INITIAUX
+        </div>
+        <div class="step-contain card-body">
+            <div class="col-12">
+                <label for="selectInitialStatesAFN" class="form-label">Choisissez les état initiaux</label>
+                <div class="selectInitial" id="selectInitialStatesAFN">
+                    <!-- Affichage js -->
+                </div>
+            </div>
+        </div>
+        <div class="step-end card-footer">
+            <input type="button" id="initialStatesAFN-btn-prev" value="Précédent">
+            <input type="button" id="initialStatesAFN-btn-check" value="Annuler">
+            <input type="button" id="initialStatesAFN-btn-next" value="Suivant">
+        </div>
+    </div>
+
+    <!-- e-AFN -->
+    <div class="step step-initialStatese-AFN card text-center">
+        <div class="step-name card-header">
+            e-AFN - ETATS INITIAUX
+        </div>
+        <div class="step-contain card-body">
+            <div class="col-12">
+                <label for="selectInitialStatese-AFN" class="form-label">Choisissez les état initiaux</label>
+                <div class="selectInitial" id="selectInitialStatese-AFN">
+                    <!-- Affichage js -->
+                </div>
+            </div>
+        </div>
+        <div class="step-end card-footer">
+            <input type="button" id="initialStatese-AFN-btn-prev" value="Précédent">
+            <input type="button" id="initialStatese-AFN-btn-check" value="Annuler">
+            <input type="button" id="initialStatese-AFN-btn-next" value="Suivant">
+        </div>
+    </div>
+    <!-- fin Alternative -->
+
+    <div class="step step-finalStates card text-center">
+        <div class="step-name card-header">
+            ETATS FINAUX
+        </div>
+        <div class="step-contain card-body">
+            <div class="col-12">
+                <label for="selectFinalStates" class="form-label">Choisissez les états finaux</label>
+                <div class="selectFinal" id="selectFinalStates">
+                    <!-- Affichage js -->
+                </div>
+            </div>
+        </div>
+        <div class="step-end card-footer">
+            <input type="button" id="finalStates-btn-prev" value="Précédent">
+            <input type="button" id="finalStates-btn-check" value="Annuler">
+            <input type="button" id="finalStates-btn-next" value="Suivant">
+        </div>
+    </div>
+
+    <div class="step step-transitionFunction card text-center">
+        <div class="step-name card-header">
+            FONCTION DE TRANSITION
+        </div>
+        <div class="step-contain card-body">
+            <label for="">Complétez la table de transition</label>
+            <div class="transitionTable">
+                <!-- Tableau JS -->
+            </div>
+        </div>
+        <div class="step-end card-footer">
+            <input type="button" id="transitionFunction-btn-prev" value="Précédent">
+            <input type="button" id="transitionFunction-btn-check" value="Annuler">
+            <input type="button" id="transitionFunction-btn-save" value="Enregistrer">
+        </div>
+    </div>
+    <div class="step step-testWord card text-center">
+        <div class="step-name card-header">
+            TESTEZ UN MOT
+        </div>
+        <div class="step-contain card-body">
+            <label for="inputWord">Entrez un mot</label>
+            <input type="text" id="inputWord" name="inputWord">
+
+        </div>
+        <div class="step-end card-footer">
+            <input type="button" id="testWord-btn-prev" value="Précédent">
+            <input type="button" id="testWord-btn-check" value="Terminer">
+            <input type="button" id="testWord-btn-save" value="Vérifier">
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/bootstrap.js.map"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
